@@ -1,0 +1,90 @@
+/* Star Field Animations */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        opacity: 0.4;
+        box-shadow: 0 0 5px rgba(251, 191, 36, 0.4);
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 15px rgba(251, 191, 36, 0.8);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.star-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.star-point {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.star-point.size1 {
+    width: 1px;
+    height: 1px;
+}
+
+.star-point.size2 {
+    width: 2px;
+    height: 2px;
+}
+
+.star-point.size3 {
+    width: 3px;
+    height: 3px;
+    opacity: 0.6;
+}
+
+/* Nebula effect */
+.nebula {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.1;
+}
+
+.nebula-purple {
+    background: radial-gradient(circle, rgba(167, 139, 250, 0.5), transparent);
+}
+
+.nebula-blue {
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.5), transparent);
+}
+
+.nebula-pink {
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.5), transparent);
+}

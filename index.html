@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio - Teacher's Journey Through the Stars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stars.css">
+</head>
+<body>
+    <!-- Galaxy Background -->
+    <div class="galaxy-background">
+        <canvas id="starCanvas"></canvas>
+        <div class="moon"></div>
+        <div class="moon-glow"></div>
+        <div class="shooting-star"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="star-icon">✨</span>
+                <span class="logo-text">E-Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#profile" class="nav-link">Profile</a></li>
+                <li><a href="#artifacts" class="nav-link">Learning Journey</a></li>
+                <li><a href="#assessment" class="nav-link">Assessment</a></li>
+                <li><a href="#vision" class="nav-link">My Vision</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Teacher's Journey</h1>
+                <p class="hero-subtitle">Through Stars, Learning, and Growth</p>
+                <div class="stars-animation"></div>
+                <button class="cta-button">Explore My Journey</button>
+            </div>
+        </section>
+
+        <!-- Student Profile Section -->
+        <section id="profile" class="section profile-section">
+            <div class="section-header">
+                <h2>Student Profile</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="container">
+                <div class="profile-content">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <div class="avatar-placeholder">👤</div>
+                        </div>
+                        <div class="profile-info">
+                            <h3 id="studentName">Your Name</h3>
+                            <p class="profile-subtitle">Student Teacher | Educator in Training</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-details">
+                        <div class="detail-card">
+                            <h4>Origin & Hometown</h4>
+                            <p id="hometown">Share your origins and what makes your hometown special...</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4>Inspiration & Goals</h4>
+                            <p id="inspiration">Describe your inspiration and goals for becoming a professional teacher...</p>
+                        </div>
+
+                        <div class="detail-card quote-card">
+                            <h4>My Guiding Quote</h4>
+                            <blockquote id="quote">
+                                "The capacity to learn is a gift; the ability to learn is a skill; the willingness to learn is a choice."
+                            </blockquote>
+                            <p class="quote-author">- Your Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Artifacts Section -->
+        <section id="artifacts" class="section artifacts-section">
+            <div class="section-header">
+                <h2>Analysis of Learning Artifacts</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="container">
+                <div class="artifacts-grid">
+                    <div class="artifact-card">
+                        <div class="artifact-icon">⚡</div>
+                        <h3>Obstacles Encountered</h3>
+                        <p id="obstacles">Document the challenges faced during the learning product development process...</p>
+                        <ul id="obstaclesList" class="detail-list">
+                            <li>Challenge 1</li>
+                            <li>Challenge 2</li>
+                            <li>Challenge 3</li>
+                        </ul>
+                    </div>
+
+                    <div class="artifact-card">
+                        <div class="artifact-icon">🧠</div>
+                        <h3>Pedagogical Theories</h3>
+                        <p id="theories">Explain the pedagogical theories or concepts adopted...</p>
+                        <ul id="theoriesList" class="detail-list">
+                            <li>Theory 1</li>
+                            <li>Theory 2</li>
+                            <li>Theory 3</li>
+                        </ul>
+                    </div>
+
+                    <div class="artifact-card">
+                        <div class="artifact-icon">🎯</div>
+                        <h3>Success Factors</h3>
+                        <p id="successFactors">Describe the factors for successful implementation...</p>
+                        <ul id="successList" class="detail-list">
+                            <li>Factor 1</li>
+                            <li>Factor 2</li>
+                            <li>Factor 3</li>
+                        </ul>
+                    </div>
+
+                    <div class="artifact-card">
+                        <div class="artifact-icon">🔄</div>
+                        <h3>Adaptations Made</h3>
+                        <p id="adaptations">Detail changes made for different classroom situations...</p>
+                        <ul id="adaptationsList" class="detail-list">
+                            <li>Adaptation 1</li>
+                            <li>Adaptation 2</li>
+                            <li>Adaptation 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Cycles Section -->
+        <section id="cycles" class="section cycles-section">
+            <div class="section-header">
+                <h2>Teaching Practice Cycles</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="container">
+                <div class="cycles-timeline">
+                    <div class="cycle-card">
+                        <div class="cycle-number">1</div>
+                        <div class="cycle-content">
+                            <h3>First Cycle</h3>
+                            <p><strong>Dates:</strong> <span id="cycle1-date">January - February</span></p>
+                            <div class="cycle-assessment">
+                                <h4>Learning Plan Assessment</h4>
+                                <p id="cycle1-plan">Mentor teacher feedback on learning plan...</p>
+                            </div>
+                            <div class="cycle-assessment">
+                                <h4>Teaching Practice Assessment</h4>
+                                <p id="cycle1-practice">Mentor teacher feedback on teaching practice...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cycle-card">
+                        <div class="cycle-number">2</div>
+                        <div class="cycle-content">
+                            <h3>Second Cycle</h3>
+                            <p><strong>Dates:</strong> <span id="cycle2-date">March - April</span></p>
+                            <div class="cycle-assessment">
+                                <h4>Learning Plan Assessment</h4>
+                                <p id="cycle2-plan">Mentor teacher feedback on learning plan...</p>
+                            </div>
+                            <div class="cycle-assessment">
+                                <h4>Teaching Practice Assessment</h4>
+                                <p id="cycle2-practice">Mentor teacher feedback on teaching practice...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cycle-card">
+                        <div class="cycle-number">3</div>
+                        <div class="cycle-content">
+                            <h3>Third Cycle</h3>
+                            <p><strong>Dates:</strong> <span id="cycle3-date">May - June</span></p>
+                            <div class="cycle-assessment">
+                                <h4>Learning Plan Assessment</h4>
+                                <p id="cycle3-plan">Mentor teacher feedback on learning plan...</p>
+                            </div>
+                            <div class="cycle-assessment">
+                                <h4>Teaching Practice Assessment</h4>
+                                <p id="cycle3-practice">Mentor teacher feedback on teaching practice...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment Section -->
+        <section id="assessment" class="section assessment-section">
+            <div class="section-header">
+                <h2>Assessment Instruments</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="container">
+                <div class="assessment-grid">
+                    <div class="assessment-card">
+                        <div class="assessment-number">Appendix 7</div>
+                        <h3>Learning Tools Development</h3>
+                        <p>Assessment Instrument for Developing Learning Tools</p>
+                        <div class="assessment-details">
+                            <h4>Mentor Teacher Evaluation</h4>
+                            <p id="appendix7">Mentor teacher's assessment of your learning tools development...</p>
+                            <div class="rating">
+                                <span class="rating-label">Overall Rating:</span>
+                                <div class="stars" id="stars7">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assessment-card">
+                        <div class="assessment-number">Appendix 8</div>
+                        <h3>Teaching Practice</h3>
+                        <p>Assessment Instrument for Teaching Practice</p>
+                        <div class="assessment-details">
+                            <h4>Mentor Teacher Evaluation</h4>
+                            <p id="appendix8">Mentor teacher's assessment of your teaching practice...</p>
+                            <div class="rating">
+                                <span class="rating-label">Overall Rating:</span>
+                                <div class="stars" id="stars8">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Targeted Teacher Model Section -->
+        <section id="vision" class="section vision-section">
+            <div class="section-header">
+                <h2>My Targeted Teacher Model</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="container">
+                <div class="vision-content">
+                    <div class="vision-card mission-card">
+                        <div class="vision-icon">🎓</div>
+                        <h3>My Mission</h3>
+                        <p id="mission">Define your mission as an educator...</p>
+                    </div>
+
+                    <div class="vision-grid">
+                        <div class="competency-card">
+                            <h4>Professional Competencies</h4>
+                            <ul id="competencies" class="competency-list">
+                                <li class="competency-item">Competency 1</li>
+                                <li class="competency-item">Competency 2</li>
+                                <li class="competency-item">Competency 3</li>
+                                <li class="competency-item">Competency 4</li>
+                            </ul>
+                        </div>
+
+                        <div class="competency-card">
+                            <h4>Character to Develop</h4>
+                            <ul id="character" class="competency-list">
+                                <li class="competency-item">Trait 1</li>
+                                <li class="competency-item">Trait 2</li>
+                                <li class="competency-item">Trait 3</li>
+                                <li class="competency-item">Trait 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 E-Portfolio. Journey Through the Stars of Education.</p>
+            <p>"Every star has a story. So do you." ✨</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/stars.js"></script>
+    <script src="js/interactive.js"></script>
+    <script src="js/data.js"></script>
+</body>
+</html>

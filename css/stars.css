@@ -1,4 +1,4 @@
-/* Star Field Animations */
+/* ==================== Star Field Animations ====================*/
 
 @keyframes float {
     0%, 100% {
@@ -38,6 +38,15 @@
     }
 }
 
+@keyframes rotate-asteroid {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .star-field {
     position: absolute;
     width: 100%;
@@ -67,24 +76,4 @@
     width: 3px;
     height: 3px;
     opacity: 0.6;
-}
-
-/* Nebula effect */
-.nebula {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(40px);
-    opacity: 0.1;
-}
-
-.nebula-purple {
-    background: radial-gradient(circle, rgba(167, 139, 250, 0.5), transparent);
-}
-
-.nebula-blue {
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.5), transparent);
-}
-
-.nebula-pink {
-    background: radial-gradient(circle, rgba(236, 72, 153, 0.5), transparent);
 }

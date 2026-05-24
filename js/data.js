@@ -1,4 +1,4 @@
-// ==================== Sample Data Configuration ==================== 
+// ==================== Sample Data Configuration ====================
 // You can easily modify these values to personalize your portfolio
 
 const portfolioData = {
@@ -75,7 +75,7 @@ const portfolioData = {
     ]
 };
 
-// ==================== Function to Load Sample Data ==================== 
+// ==================== Function to Load Sample Data ====================
 function loadSampleData() {
     // Load profile data
     document.getElementById('studentName').textContent = portfolioData.studentName;
